@@ -1,4 +1,5 @@
-@use "./Sections/headerTop";
+@use "./Sections/headerSection";
+@use "./Sections/headerTopSection";
 @use "./Common/common";
 @import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
