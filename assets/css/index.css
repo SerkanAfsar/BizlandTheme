@@ -61,6 +61,17 @@ header nav ul li a {
   font-size: 16px;
 }
 
+.btnComponent {
+  border-radius: 5px;
+  background: #106eea;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 html,
 body {
   margin: 0px;
@@ -98,6 +109,14 @@ h5,
 h6 {
   margin: 0px;
   padding: 0px;
+}
+
+.item {
+  box-shadow: 0px 4px 8px rgba(221, 221, 221, 0.4);
+  padding: 10px;
+  background-origin: #fff;
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */

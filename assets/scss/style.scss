@@ -1,5 +1,8 @@
 @use "./Sections/headerSection";
 @use "./Sections/headerTopSection";
+@use "./Sections/sliderSection";
 @use "./Common/common";
+
+@use "./Sections/mainPageItems";
 @import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
