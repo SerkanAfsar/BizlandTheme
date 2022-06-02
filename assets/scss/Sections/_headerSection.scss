@@ -3,6 +3,8 @@
 header {
     width: 100%;
     height: 86px;
+    position: sticky;
+    position: -webkit-sticky;
     .brand {
         color: $blackColor;
         font-size: 30px;
