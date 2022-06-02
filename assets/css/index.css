@@ -1,0 +1,60 @@
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+#headerTop {
+  background: #106eea;
+  display: block;
+  padding: 10px 0px;
+  min-height: 30px;
+  color: #fff;
+}
+#headerTop .contactInfo i {
+  color: #fff;
+  margin-right: 10px;
+}
+#headerTop .contactInfo i a {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 14px;
+}
+#headerTop .socialInfo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  margin-left: 10px;
+}
+#headerTop .socialInfo a i {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  background: #fff;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  padding: 60px 0px;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=index.css.map */

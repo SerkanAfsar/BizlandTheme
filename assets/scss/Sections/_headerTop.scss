@@ -1,0 +1,32 @@
+@use "../Common/variables" as *;
+@use "../Common/mixins" as *;
+
+#headerTop {
+    background: $primaryColor;
+    display: block;
+    padding: 10px 0px;
+    min-height: 30px;
+    color: #fff;
+    .contactInfo {
+        i {
+            color: #fff;
+            margin-right: 10px;
+            a {
+                color: #fff;
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+    .socialInfo {
+        a {
+            @include centerItems;
+            @include transition;
+            color: #fff;
+            margin-left: 10px;
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}

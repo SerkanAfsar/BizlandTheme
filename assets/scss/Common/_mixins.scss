@@ -1,0 +1,8 @@
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+@mixin centerItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
