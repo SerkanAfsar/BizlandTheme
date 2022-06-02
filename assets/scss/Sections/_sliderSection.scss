@@ -1,7 +1,7 @@
 @use "../Components/buttonComponent";
 @use "../Common/variables" as *;
 #slider {
-    height: calc(100vh - 100px);
+    height: 75vh;
     background: url("../images/Slider.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
