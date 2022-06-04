@@ -1,18 +1,30 @@
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: ['./assets/js/script.js', './assets/scss/style.scss'],
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        // path: path.resolve(__dirname, 'assets'),
+        filename: "bundle.js"
     },
     watch: true,
+    plugins: [
+        new CopyPlugin({
+            patterns: [
+                { from: "./assets/images", to: "images" },
+                { from: "./assets/css/fonts", to: "css/fonts" },
+            ],
+        }),
+    ],
     module: {
+
         rules: [
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: [
+
                     {
                         loader: 'babel-loader',
                         options: {
