@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 html,
 body {
     margin: 0px;
@@ -32,23 +33,6 @@ h6 {
     margin: 0px;
     padding: 0px;
 }
-#loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 10;
-    background: rgba($color: #000000, $alpha: 0.6);
-    color: red;
-    font-size: 40px;
-}
-#loading.disabled {
-    display: none;
-}
 
 @-webkit-keyframes animate-preloader {
     0% {
@@ -76,6 +60,9 @@ h6 {
     z-index: 9999;
     overflow: hidden;
     background: #fff;
+    visibility: visible;
+    opacity: 1;
+    @include transition;
 }
 
 #preloader:before {
@@ -90,4 +77,8 @@ h6 {
     height: 60px;
     -webkit-animation: animate-preloader 1s linear infinite;
     animation: animate-preloader 1s linear infinite;
+}
+#preloader.disabled {
+    opacity: 0;
+    visibility: hidden;
 }

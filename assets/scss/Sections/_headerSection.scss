@@ -5,6 +5,15 @@ header {
     height: 86px;
     position: sticky;
     position: -webkit-sticky;
+    background: $whiteColor;
+    &.sticky {
+        position: sticky;
+        position: -webkit-sticky;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        z-index: 99;
+    }
     .brand {
         color: $blackColor;
         font-size: 30px;
