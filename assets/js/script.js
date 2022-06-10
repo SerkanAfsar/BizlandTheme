@@ -1,8 +1,8 @@
 import AOS from 'aos';
-const loader = document.getElementById("loading");
+const loader = document.getElementById("preloader");
 window.onload = () => {
     setTimeout(() => {
-        loader.classList.add("disabled");
+        loader.style.display = "none"
     }, 200);
 }
 
