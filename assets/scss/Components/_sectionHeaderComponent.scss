@@ -1,0 +1,37 @@
+@use "../Common/variables" as *;
+.sectionHeader {
+    display: block;
+    text-align: center;
+
+    .topTitle {
+        background-color: $titleLightBlueColor;
+        padding: 5px 20px;
+        color: $primaryColor;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    h2 {
+        font-size: 32px;
+        color: $fontColor;
+        display: block;
+        font-weight: 700;
+        margin: 10px 0px 0px;
+        span {
+            display: inline;
+            color: $primaryColor;
+        }
+    }
+    p {
+        width: 50%;
+        display: block;
+        color: $fontColor;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}

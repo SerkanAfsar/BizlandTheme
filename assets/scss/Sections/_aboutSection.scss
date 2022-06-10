@@ -1,0 +1,5 @@
+@use "../Components/sectionHeaderComponent";
+@use "../../scss/Common/variables" as *;
+section.aboutSection {
+    background: #ddd;
+}
